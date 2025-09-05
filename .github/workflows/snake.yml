@@ -1,0 +1,64 @@
+name: Generate Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # daily at midnight UTC
+  workflow_dispatch:       # manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Generate snake SVGs
+        # svg-only variant avoids GIFs and produces the two SVG outputs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: nisha1415
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Show dist files
+        run: |
+          echo "Dist list:"
+          ls -la dist || true
+
+      - name: Publish generated SVGs to output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          BRANCH=output
+
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # if output branch exists, switch to it, else create orphan
+          if git show-ref --verify --quiet refs/heads/$BRANCH; then
+            git checkout $BRANCH
+            git rm -rf . || true
+          else
+            git checkout --orphan $BRANCH
+            git rm -rf . || true
+          fi
+
+          # copy generated files
+          cp -r dist/* .
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(snake): update contribution snake $(date -u +"%Y-%m-%d %H:%M UTC")"
+            git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" $BRANCH
+          fi
