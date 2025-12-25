@@ -29,11 +29,9 @@
 </p>
 
 <p align="center">
-  <img 
-       src="https://streak-stats.demolab.com?user=nisha1415&theme=dark&border_radius=10&stroke=FFFFFF&ring=F39C12&fire=F39C12&currStreakLabel=F39C12" 
-       alt="GitHub Streak" 
-       height="180" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nisha1415&theme=dark" />
 </p>
+
 
 
 
