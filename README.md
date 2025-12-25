@@ -29,8 +29,9 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nisha1415&theme=dark" />
+  <img src="https://streak-stats.demolab.com?user=nisha1415&theme=dark" />
 </p>
+
 
 
 
