@@ -28,7 +28,13 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nisha1415&layout=compact&theme=radical" height="165" />
 </p>
 
-<p align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamakshibhat14&theme=dark" /> </p>
+<p align="center">
+  <img 
+       src="https://streak-stats.demolab.com?user=nisha1415&theme=dark&border_radius=10&stroke=FFFFFF&ring=F39C12&fire=F39C12&currStreakLabel=F39C12" 
+       alt="GitHub Streak" 
+       height="180" />
+</p>
+
 
 
 
