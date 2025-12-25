@@ -21,7 +21,7 @@
 
 ---
 
-## 📊 GitHub Stats (Dark Mode)
+## 📊 GitHub Stats 
 <div align="center">
 
 <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=nisha1415&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10" height="150" />
