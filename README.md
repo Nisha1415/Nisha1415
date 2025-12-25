@@ -29,8 +29,9 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=nisha1415&theme=dark" />
+  <img src="https://streak-stats.demolab.com?user=nisha1415&theme=dark&ring=F39C12&fire=F39C12&currStreakLabel=F39C12" />
 </p>
+>
 
 
 
