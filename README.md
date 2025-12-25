@@ -23,12 +23,14 @@
 ## 📊 GitHub Stats
 <div align="center">
 
-<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=nisha1415&show_icons=true&theme=radical" height="150" alt="GitHub Stats"/>
+<!-- Main GitHub Stats -->
+<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=nisha1415&show_icons=true&theme=tokyonight" height="150" />
 
-<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=nisha1415&layout=compact&theme=radical" height="150" alt="Top Languages"/>
+<!-- Top Languages -->
+<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=nisha1415&layout=compact&theme=tokyonight" height="150" />
 
 </div>
->
+
 
 
 ---
