@@ -29,8 +29,9 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=nisha1415&theme=dark" />
+  <img src="https://streak-stats.demolab.com?user=nisha1415&theme=dark&date_format=%5By%20%5DM%20j" />
 </p>
+
 
 
 
