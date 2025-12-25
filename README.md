@@ -3,7 +3,7 @@
 <!-- Profile Views -->
 <img src="https://komarev.com/ghpvc/?username=nisha1415&style=flat-square&color=8A2BE2" />
 
-# 🌸 Hey, I'm Nisha  
+# 👋 Hey, I'm Nisha  
 ### **Full Stack Developer | MCA Student | MERN & Java Enthusiast**
 ✨ I love building practical projects, learning new tech, and improving step by step.
 
